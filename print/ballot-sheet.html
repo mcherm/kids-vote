@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kids Vote 2026 – ballot print sheet</title>
+  <!--
+    Three ballots on one US Letter page, for the print shop to cut into thirds.
+    Turn it into a PDF with `just ballot-pdf`.
+
+    Each third is 8.5in x 3.667in. The ballot is drawn a little smaller than that (7.75in wide), which leaves
+    roughly 1/3in of white above and below every cut, so a cut that's off by a bit won't clip a ballot.
+    There are deliberately no cut marks: the print shop cuts by their equipment, and marks would only make a
+    slightly-off cut visible.
+  -->
+  <style>
+    @page { size: letter; margin: 0; }
+    html, body { margin: 0; }
+    .sheet {
+      width: 8.5in;
+      height: 11in;
+      overflow: hidden;
+    }
+    .third {
+      height: calc(11in / 3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .third img { width: 7.75in; }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="third"><img src="../web/doc/2026-ballot.svg" alt=""></div>
+    <div class="third"><img src="../web/doc/2026-ballot.svg" alt=""></div>
+    <div class="third"><img src="../web/doc/2026-ballot.svg" alt=""></div>
+  </div>
+</body>
+</html>
