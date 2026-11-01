@@ -1,14 +1,134 @@
+@font-face {
+  font-family: "Patrick Hand";
+  src: url("/fonts/patrick-hand-latin.woff2") format("woff2");
+  font-display: swap;
+}
+
 body {
   margin: 0;
-  padding: 2rem 1rem;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  line-height: 1.5;
-  color: #222;
-  background: #fff;
+  padding: 1.5rem 1rem 3rem;
+  font-family: "Patrick Hand", "Comic Sans MS", cursive;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: #2b2b2b;
+  background-color: #e8d5ae;
+  background-image: radial-gradient(rgba(120, 90, 40, .08) 1px, transparent 1px);
+  background-size: 6px 6px;
 }
 
 main {
-  max-width: 40rem;
+  max-width: 42rem;
   margin: 0 auto;
+}
+
+h1, h2 {
+  font-weight: normal;
+  margin: 0 0 .5rem;
+}
+
+h1 {
+  font-size: clamp(3.25rem, 13vw, 5.5rem);
   text-align: center;
+  line-height: 1;
+  margin-bottom: .25rem;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, .12);
+}
+h1 span:nth-child(1) { color: #d6336c; }
+h1 span:nth-child(2) { color: #1c7ed6; }
+h1 span:nth-child(3) { color: #f08c00; }
+
+.tagline {
+  text-align: center;
+  margin: 0 0 2rem;
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+  line-height: 1.1;
+}
+
+a { color: #1864ab; }
+
+/* Colored paper cards, each taped on slightly crooked */
+.card {
+  position: relative;
+  padding: 1.5rem 1.5rem 1.25rem;
+  margin: 0 0 2rem;
+  box-shadow: 3px 4px 0 rgba(0, 0, 0, .15);
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  width: 110px;
+  height: 26px;
+  margin-left: -55px;
+  background: rgba(255, 255, 255, .55);
+  transform: rotate(-3deg);
+}
+.yellow { background: #ffe066; transform: rotate(-1deg); }
+.pink   { background: #fcc2d7; transform: rotate(.8deg); }
+.blue   { background: #a5d8ff; transform: rotate(-.6deg); }
+.green  { background: #b2f2bb; transform: rotate(1deg); }
+
+/* The winner announcement */
+.winner {
+  text-align: center;
+  border: 4px dashed #2b2b2b;
+}
+.winner .big {
+  font-size: clamp(2.75rem, 11vw, 4rem);
+  line-height: 1.05;
+  color: #c92a2a;
+  margin: .25rem 0 .75rem;
+}
+.when {
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+.when strong {
+  display: block;
+  font-size: 1.8rem;
+}
+.tally {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+/* Sample ballot */
+.ballot {
+  background: #fff;
+  padding: 1rem 1.25rem;
+  border: 2px solid #2b2b2b;
+  margin-top: .5rem;
+}
+.ballot h3 {
+  margin: 0 0 .5rem;
+  text-align: center;
+  letter-spacing: .1em;
+  font-weight: normal;
+}
+.choice {
+  display: flex;
+  gap: .75rem;
+  align-items: flex-start;
+  margin: .75rem 0;
+}
+.oval {
+  flex: none;
+  width: 2.2rem;
+  height: 1.3rem;
+  border: 2px solid #2b2b2b;
+  border-radius: 50%;
+  margin-top: .2rem;
+}
+.choice b { display: block; }
+
+ul.past {
+  padding-left: 1.25rem;
+  margin: 0;
 }
