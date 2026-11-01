@@ -65,7 +65,7 @@ a { color: #1864ab; }
   width: 110px;
   height: 26px;
   margin-left: -55px;
-  background: rgba(255, 255, 255, .55);
+  background: rgba(255, 255, 255, .40);
   transform: rotate(-3deg);
 }
 .yellow { background: #ffe066; transform: rotate(-1deg); }
@@ -131,4 +131,9 @@ a { color: #1864ab; }
 ul.past {
   padding-left: 1.25rem;
   margin: 0;
+}
+
+span.option {
+  font-weight: bold;
+  color: #40a309;
 }
