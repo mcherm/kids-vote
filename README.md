@@ -4,6 +4,7 @@ A simple website for managing a community event, served at https://kids-vote.org
 ## Layout
 - `web/` — the site itself: plain HTML and CSS, no build step. Its contents are uploaded to S3 as-is.
 - `docs/aws-setup.md` — how the AWS infrastructure (S3, CloudFront, ACM, Route 53) was set up by hand.
+- `docs/favicon.md` — what the favicon files are and how to regenerate them from the SVG.
 - `justfile` — project commands.
 
 ## Commands
