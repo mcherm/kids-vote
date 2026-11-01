@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kids Vote 2026 – save-the-date print sheet</title>
+  <!--
+    Four save-the-date cards on one US Letter page, for the print shop to cut into quarters
+    (one vertical and one horizontal cut). Turn it into a PDF with `just save-the-date-pdf`.
+
+    Each quarter is 4.25in x 5.5in. The card is drawn a little smaller than that (3.85in wide), which leaves
+    roughly 1/2in of white on each side of every cut, so a cut that's off by a bit won't clip a card.
+    There are deliberately no cut marks: the print shop cuts by their equipment, and marks would only make a
+    slightly-off cut visible.
+  -->
+  <style>
+    @page { size: letter; margin: 0; }
+    html, body { margin: 0; }
+    .sheet {
+      width: 8.5in;
+      height: 11in;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .quarter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .quarter img { width: 3.85in; }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="quarter"><img src="2026-save-the-date.svg" alt=""></div>
+    <div class="quarter"><img src="2026-save-the-date.svg" alt=""></div>
+    <div class="quarter"><img src="2026-save-the-date.svg" alt=""></div>
+    <div class="quarter"><img src="2026-save-the-date.svg" alt=""></div>
+  </div>
+</body>
+</html>

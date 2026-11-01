@@ -16,7 +16,11 @@ serve port="8000":
 
 # Make the printable ballot PDF (3 per page) from print/ballot-sheet.html
 ballot-pdf:
-    "{{chrome}}" --headless=new --disable-gpu --no-pdf-header-footer --print-to-pdf={{site_dir}}/doc/2026-ballot.pdf "file://{{justfile_directory()}}/print/ballot-sheet.html"
+    "{{chrome}}" --headless=new --disable-gpu --no-pdf-header-footer --print-to-pdf=print/2026-ballot.pdf "file://{{justfile_directory()}}/print/ballot-sheet.html"
+
+# Make the printable save-the-date PDF (4 per page) from print/save-the-date.html
+save-the-date-pdf:
+    "{{chrome}}" --headless=new --disable-gpu --no-pdf-header-footer --print-to-pdf=print/2026-save-the-date.pdf "file://{{justfile_directory()}}/print/save-the-date.html"
 
 # Upload web/ to S3 and invalidate the CloudFront cache
 deploy:
