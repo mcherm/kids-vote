@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="172" viewBox="60 -10 190 172">
+  <!-- Glowstick Dance Party: a color version of the dancer from the ballot artwork. -->
+  <!-- music notes -->
+  <g fill="#7048e8">
+    <ellipse cx="198" cy="104" rx="8" ry="6"/>
+    <ellipse cx="226" cy="96" rx="8" ry="6"/>
+    <line x1="205" y1="104" x2="205" y2="72" stroke="#7048e8" stroke-width="4"/>
+    <line x1="233" y1="96" x2="233" y2="64" stroke="#7048e8" stroke-width="4"/>
+    <polygon points="203,70 235,62 235,70 203,78"/>
+  </g>
+  <g transform="translate(0 6)">
+    <!-- dancer -->
+    <g fill="none" stroke="#2b2b2b" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="132" y1="56" x2="128" y2="100" stroke-width="16"/>
+      <polyline points="131,62 108,48 92,22" stroke-width="12"/>
+      <polyline points="133,62 158,52 176,26" stroke-width="12"/>
+      <polyline points="128,98 110,124 96,150" stroke-width="13"/>
+      <polyline points="128,98 150,120 156,150" stroke-width="13"/>
+    </g>
+    <circle cx="132" cy="34" r="17" fill="#2b2b2b"/>
+    <!-- glowsticks in each hand -->
+    <g stroke-linecap="round">
+      <line x1="74" y1="32" x2="108" y2="10" stroke="#000" stroke-width="13"/>
+      <line x1="74" y1="32" x2="108" y2="10" stroke="#ff4fb8" stroke-width="7"/>
+      <line x1="160" y1="14" x2="194" y2="36" stroke="#000" stroke-width="13"/>
+      <line x1="160" y1="14" x2="194" y2="36" stroke="#4cf04c" stroke-width="7"/>
+    </g>
+    <!-- glow -->
+    <g stroke-width="4" stroke-linecap="round">
+      <g stroke="#e64980">
+        <line x1="74.3" y1="17.5" x2="71.1" y2="12.5"/>
+        <line x1="84.5" y1="10.9" x2="81.3" y2="5.9"/>
+        <line x1="94.7" y1="4.3" x2="91.5" y2="-0.7"/>
+      </g>
+      <g stroke="#2f9e44">
+        <line x1="173.3" y1="8.3" x2="176.5" y2="3.3"/>
+        <line x1="183.5" y1="14.9" x2="186.7" y2="9.9"/>
+        <line x1="193.7" y1="21.5" x2="196.9" y2="16.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="242" height="152" viewBox="22 6 242 152">
+  <!-- Arts & Crafts Party: a color version of the palette from the ballot artwork. -->
+  <!-- paint palette -->
+  <path d="M30,80 C30,30 100,20 150,34 C190,46 186,86 160,92 C140,96 138,112 150,124 C162,138 140,150 110,150 C60,150 30,124 30,80 Z"
+        fill="#f4d19b" stroke="#2b2b2b" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="116" cy="106" r="9" fill="#fff" stroke="#2b2b2b" stroke-width="4"/>
+  <circle cx="62" cy="72" r="13" fill="#fa5252"/>
+  <circle cx="100" cy="50" r="13" fill="#339af0"/>
+  <circle cx="140" cy="54" r="13" fill="#fcc419"/>
+  <circle cx="70" cy="114" r="13" fill="#40c057"/>
+  <!-- paintbrush -->
+  <line x1="176" y1="150" x2="214" y2="58" stroke="#a0522d" stroke-width="11" stroke-linecap="round"/>
+  <line x1="214" y1="58" x2="221" y2="41" stroke="#868e96" stroke-width="15"/>
+  <path d="M213.6,38.3 Q216,22 231,14 Q234,30 228.4,44.5 Z" fill="#339af0"/>
+  <!-- crayon -->
+  <g fill="#845ef7" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round">
+    <polygon points="238,70 256,70 247,48"/>
+    <rect x="238" y="70" width="18" height="78" rx="3"/>
+    <rect x="238" y="92" width="18" height="32" fill="#e5dbff" stroke-width="3"/>
+  </g>
+</svg>

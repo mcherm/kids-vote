@@ -95,8 +95,49 @@ a { color: #1864ab; }
 .tally {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 1.25rem;
   font-size: 1.15rem;
+  display: flex;
+  gap: .75rem;
+}
+.tally li {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: .75rem .5rem;
+  background: rgba(255, 255, 255, .45);
+  border: 3px solid transparent;
+}
+.tally li.won {
+  border: 6px solid #c92a2a;
+  background: #fff;
+  box-shadow: 4px 5px 0 rgba(0, 0, 0, .2);
+  transform: scale(1.06);
+}
+.tally li:not(.won) {
+  opacity: .65;
+}
+.tally img {
+  display: block;
+  width: 100%;
+  max-width: 9rem;
+  height: auto;
+  margin-bottom: .5rem;
+}
+.tally .name {
+  line-height: 1.15;
+}
+.tally .votes {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.tally li.won .votes {
+  font-size: clamp(1.9rem, 7vw, 2.5rem);
+  line-height: 1.1;
+  color: #c92a2a;
 }
 
 /* Sample ballot: the same artwork that gets printed */
